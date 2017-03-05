@@ -8,10 +8,21 @@ def bubble_sort(lst):
         >>> bubble_sort([3, 5, 7, 2, 4, 1])
         [1, 2, 3, 4, 5, 7]
     """
+    # for i in range(len(lst) - 1):
+    #     for j in range(len(lst) - 1 - i):
+    #         if lst[j] > lst[j + 1]:
+    #             lst[j], lst[j + 1] = lst[j + 1], lst[j]
+    # return lst
+
+    # Faster solution because stops if list is already sorted.
     for i in range(len(lst) - 1):
+        made_swap = False
         for j in range(len(lst) - 1 - i):
             if lst[j] > lst[j + 1]:
                 lst[j], lst[j + 1] = lst[j + 1], lst[j]
+                made_swap = True
+        if not made_swap:
+            break
     return lst
 
 
