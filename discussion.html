@@ -1,0 +1,72 @@
+Recursion
+
+1) In your own words, what is recursion?
+    Recursion is when a function calls itself.
+
+2) Why is it necessary to have a base case?
+    It is necessary to have a base case because you need an end condition where the recursion is done.
+
+
+
+Graphs
+
+1) What is a graph?
+    A graph is made up of nodes and arcs (which connect the nodes). The relationship between nodes
+    could be directed or non-directed. Graphs can also be cyclic.
+
+2) How is a graph different from a tree?
+    A graph can be cyclic, and trees are acyclic.
+
+3) Give an example of something that would be good to model with a graph.
+    Social network connections would be a good model with a non-directive graph.
+
+
+
+Performance of Different Data Structures
+
+Data Structure          Index       Search      Add-R       Add-L       Pop-L       Pop-R
+Python List (Array)     O(1)        O(n)        O(1)        O(n)        O(n)        O(1)
+Linked List             O(n)        O(n)        O(1)        O(1)        O(1)        O(n)
+Doubly-Linked List      O(n)        O(n)        O(1)        O(1)        O(1)        O(1)                 
+Queue (as Array)        X           X           O(1)        X           O(n)        X
+Queue (as LL or DLL)    X           X           O(1)        X           O(1)        X
+Stack (as Array,LL, or DLL)X        X           O(1)        X           X           O(1)
+Deque (as DLL)          X           X           O(1)        O(1)        O(1)        O(1)
+
+
+Data Structure          Get     Add     Delete      Iterate     Memory
+Dictionary (Hash Map)   O(1)    O(1)    O(1)        O(n)        medium
+Set (Hash Map)          O(1)    O(1)    O(1)        O(n)        medium         
+Binary Search Tree      O(logn) O(logn) O(logn)     O(n)        a little     
+tree                    O(n)    O(1)    O(1)        O(n)        a little
+
+
+
+Sorting
+
+1) Describe in words how the Bubble Sort algorithm works.
+    Bubble sort will compare the first two numbers in a list, and place the larger number to the right.
+    It will then compare the second number with the third number, and do the same thing. This will
+    continue until the largest number is at the end. This sequence will repeat until the list is sorted.
+
+2) Describe in words how the Merge Sort algorithm works.
+    The list is split in half (or as close to half as possible). Those lists will continue to split in half
+    until you have either 1 or 0 item per list. The lists will then merge so that the new lists are sorted
+    as they are created. This is done by comparing index [0] of each list and appending the smaller item.
+
+3) Describe in words how the Quick Sort algorithm works.
+    A number in the list is chosen as a pivot. For each item in the list, the items smaller than the pivot
+    are moved to the left, and the items larger than the pivot are moved to the right.
+
+
+
+
+
+
+
+
+
+
+
+
+
